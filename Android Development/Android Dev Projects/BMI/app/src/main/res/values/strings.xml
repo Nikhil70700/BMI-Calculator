@@ -1,16 +1,16 @@
 <resources>
     <string name="app_name">BMI App</string>
     <string name="EditWeight">Enter Weight (kg)</string>
-    <string name="hintWeight">e.g. 70</string>
-    <string name="hintHeightIn">e.g. 6</string>
-    <string name="hintHeighFt">e.g. 5</string>
+    <string name="hintWeight">ex:70</string>
+    <string name="hintHeightIn">ex:6</string>
+    <string name="hintHeighFt">ex:5</string>
     <string name="EditHeightInc">Enter Height (inches)</string>
     <string name="EditHeightFt">Enter Height (ft)</string>
     <string name="CalcBtn">Calculate BMI</string>
     <string name="ResTxt">Your BMI will appear here</string>
-    <string name="healthy">You are Healthy</string>
-    <string name="UnderWeight">Your Are Underweight</string>
-    <string name="OverWeight">Your Are Overweight</string>
+    <string name="healthy">You are Healthy 👍</string>
+    <string name="UnderWeight">Your Are Underweight..!🧑‍⚕️</string>
+    <string name="OverWeight">Your Are Overweight..! 🧑‍⚕️</string>
     <string name="my_image_desc">I am BMI Image Description</string>
     
 </resources>

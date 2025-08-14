@@ -2,13 +2,13 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/llMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
     android:padding="24dp"
-    android:background="#758CC5"
+    android:background="@color/llBg"
     tools:context=".MainActivity">
 
 
@@ -24,7 +24,9 @@
         android:layout_height="wrap_content"
         android:text="@string/EditWeight"
         android:textSize="16sp"
-        android:layout_marginBottom="4dp"/>
+        android:id="@+id/WTxt"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/white"/>
 
     <EditText
         android:id="@+id/edtWeight"
@@ -42,7 +44,9 @@
         android:layout_height="wrap_content"
         android:text="@string/EditHeightFt"
         android:textSize="16sp"
-        android:layout_marginBottom="4dp"/>
+        android:id="@+id/HFtTxt"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/white"/>
     <EditText
         android:id="@+id/edtHeightFt"
         android:layout_width="match_parent"
@@ -59,7 +63,9 @@
         android:layout_height="wrap_content"
         android:text="@string/EditHeightInc"
         android:textSize="16sp"
-        android:layout_marginBottom="4dp"/>
+        android:id="@+id/HInTxt"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/white"/>
 
     <EditText
         android:id="@+id/edtHeightInc"
@@ -77,6 +83,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/CalcBtn"
+        android:backgroundTint="@color/btn"
         android:padding="12dp"
         android:layout_marginBottom="20dp"/>
 
@@ -89,6 +96,7 @@
         android:textSize="18sp"
         android:gravity="center"
         android:textStyle="bold"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"/>
 
 </LinearLayout>
