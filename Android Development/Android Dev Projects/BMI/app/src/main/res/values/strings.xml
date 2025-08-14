@@ -11,5 +11,6 @@
     <string name="healthy">You are Healthy</string>
     <string name="UnderWeight">Your Are Underweight</string>
     <string name="OverWeight">Your Are Overweight</string>
+    <string name="my_image_desc">I am BMI Image Description</string>
     
 </resources>
