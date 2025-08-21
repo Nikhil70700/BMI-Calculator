@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
 //            Conditions
 
-                if (b1.equals(b2) && b2.equals(b3) && !b1.equals(" ")) {
+                if (b1.equals(b2) && b2.equals(b3) && !b1.equals("")) {
                     Toast.makeText(this, "Winner is:" + b1, Toast.LENGTH_SHORT).show();
                     restart();
 
@@ -90,6 +90,9 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(this, "Winner is:" + b3, Toast.LENGTH_SHORT).show();
                     restart();
 
+                }else if (count == 9) {
+                    Toast.makeText(this, "Match Draw", Toast.LENGTH_SHORT).show();
+                    restart();
                 }
 
             }
