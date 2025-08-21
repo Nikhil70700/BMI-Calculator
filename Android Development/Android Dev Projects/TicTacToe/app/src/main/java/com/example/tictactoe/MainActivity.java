@@ -12,7 +12,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    Button btn_1,btn_2,btn_3,btn_4,btn_5,btn_6,btn_7,btn_8,btn_9;
+    Button btn_1,btn_2,btn_3,btn_4,btn_5,btn_6,btn_7,btn_8,btn_9,myResetButton;
     String b1,b2,b3,b4,b5,b6,b7,b8,b9;
     int flag=0;
     int count=0;
@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         init();
     }
+
     private void init(){
         btn_1=findViewById(R.id.btn_1);
         btn_2=findViewById(R.id.btn_2);
@@ -33,7 +34,20 @@ public class MainActivity extends AppCompatActivity {
         btn_7=findViewById(R.id.btn_7);
         btn_8=findViewById(R.id.btn_8);
         btn_9=findViewById(R.id.btn_9);
+        myResetButton = findViewById(R.id.myResetButton);
+myResetButton.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        restart();
+        Toast.makeText(MainActivity.this, "Game Re-Started", Toast.LENGTH_SHORT).show();
     }
+});
+
+
+    }
+
+
+
     public void Check(View view){
         Button currbtn=(Button)view;
         if(currbtn.getText().toString().equals("")) {
@@ -99,6 +113,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
+
+
 
     public void restart(){
         btn_1.setText("");
