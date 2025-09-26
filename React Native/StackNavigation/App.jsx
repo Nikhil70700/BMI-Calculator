@@ -6,18 +6,28 @@ import { Home } from './src/screens/Home';
 import Search from './src/screens/Search';
 import Profile from './src/screens/Profile';
 
-
-
-
-
 const Stack = createNativeStackNavigator();
 
 const StackNavigator = () => {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="Search" component={Search} />
-      <Stack.Screen name="Profile" component={Profile} />
+    <Stack.Navigator initialRouteName="Home">
+      <Stack.Screen
+        name="Home"
+        component={Home}
+        options={{headerStyle:{backgroundColor:'#b6b1b1',},headerTitleStyle:{color:'black',fontSize:25,fontWeight:'bold'}}} //Customizing Header
+    
+        />
+      <Stack.Screen
+        name="Search"
+        component={Search}
+        options={{title:'Search Screen',
+        headerStyle:{backgroundColor:'cyan'},headerTitleStyle:{color:'blue',fontSize:25,fontWeight:'bold'}
+        }}//Customizing Header
+        />
+      <Stack.Screen
+        name="Profile"
+        component={Profile}
+         />
     </Stack.Navigator>
   );
 };
