@@ -1,10 +1,13 @@
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import React from 'react';
 
-const Profile = ({ navigation }) => {
+const Profile = ({ navigation,route}) => {
+  const {id,name} = route.params;
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Profile</Text>
+      <Text style={styles.title}>User Data</Text>
+      <Text style={styles.idTxt}>User ID: {id}</Text>
+      <Text style={styles.nameTxt}>User Name:{name}</Text>
       <TouchableOpacity
         style={styles.btn}
         onPress={() => navigation.navigate('Search')}
@@ -37,5 +40,15 @@ const styles = StyleSheet.create({
     color:'#fff',
     fontSize:16,
     fontWeight:'bold'
+  },
+  idTxt:{
+   color:'green',
+   fontSize:20,
+   marginBottom:10
+  },
+  nameTxt:{
+    color:'orange',
+    fontSize:20,
+    marginBottom:20
   }
 });

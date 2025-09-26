@@ -7,7 +7,7 @@ export const Home = ({ navigation }) => {
       <Text style={styles.title}>Home</Text>
       <TouchableOpacity 
         style={styles.btn} 
-        onPress={() => navigation.navigate('Profile')}
+        onPress={() => navigation.navigate('Profile',{id:1,name:'Nikhil Pandey'})}
       >
         <Text style={styles.btnText}>Go to Profile</Text>
       </TouchableOpacity>
